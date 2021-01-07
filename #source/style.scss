@@ -1,0 +1,51 @@
+//Миксины
+@import '_help_scss/mixins/normalize';
+@import '_help_scss/mixins/container';
+@import '_help_scss/mixins/adaptiv-font';
+
+//Шрифты
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+//font-family: 'Roboto', sans-serif;
+
+//Переменные
+$blue: #2692ff; //Цвет голубой.
+$lightGray: #9c9c9c; //Цвет cthsq.
+$maxWidth: 1170; //Максимальная ширина контента для мексина adaptiv-font.
+
+//Пример внесения миксина адаптивного шрифта и контейнера
+// .box p {
+//     @include adaptiv-font(30, 20);
+//     font-size: 30px;
+//     @include container (1170px)
+// }
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 36px;
+	color: #fff;
+}
+
+.wrapper {
+	overflow: hidden;
+	min-height: 100vh;
+}
+
+.container {
+	@include container($maxWidth);
+}
+
+.page {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	display: flex;
+	flex-direction: column;
+}
+
+// Основные блоки
+@import 'header/header';
+@import 'main/main';
+@import 'footer/footer';
