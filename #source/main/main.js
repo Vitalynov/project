@@ -2,25 +2,30 @@
 "use strict";
 
 //Практика 1.
-const numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели', '');
-if (0 < numberOfFilms < 10) {
-    alert('Вы не любите КИНО?');
-} else if (10 < numberOfFilms < 30) {
-    alert('Вы классический зритель');
-} else if (numberOfFilms >= 30) {
-    alert('Вы КИНО-ман?');
-} else {
-    alert('Произошла ошибка');
-}
-console.log(numberOfFilms);
+// const numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели', '');
+// if (0 < numberOfFilms < 10) {
+//     alert('Вы не любите КИНО?');
+// } else if (10 < numberOfFilms < 30) {
+//     alert('Вы классический зритель');
+// } else if (numberOfFilms >= 30) {
+//     alert('Вы КИНО-ман?');
+// } else {
+//     alert('Произошла ошибка');
+// }
+// console.log(numberOfFilms);
 
-const personalMovieDB = {
-    'count': numberOfFilms,
-    'movies': {},
-    'actors': {},
-    'genres': [],
-    'privat': false
-};
+// const personalMovieDB = {
+//     'count': numberOfFilms,
+//     'movies': {},
+//     'actors': {},
+//     'genres': [],
+//     'privat': false
+// };
+// let count = Object.keys(personalMovieDB);
+
+// for (let i = 0; i < count.length; i++) {
+//     console.log(i);
+// }
 // const a = prompt('Один из последних просмотренных фильмов?', ''),
 //     b = +prompt('На сколько оцените его?', ''),
 //     c = prompt('Один из последних просмотренных фильмов?', ''),
@@ -45,3 +50,10 @@ const personalMovieDB = {
 // }
 
 // console.log(personalMovieDB);
+
+// function ret() {
+//     let num = 50;
+//     return num;
+// }
+// // let number = ret();
+// console.log(ret());
